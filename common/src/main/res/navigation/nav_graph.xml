@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_launcher">
         <action
             android:id="@+id/action_fragment_launcher_to_fragment_main"
-            app:destination="@id/fragment_main" />
+            app:destination="@id/fragment_main"
+            app:popUpTo="@id/fragment_launcher"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -20,22 +22,4 @@
         android:name="keijumt.navigationsample.main.MainFragment"
         android:label="mainFragment"
         tools:layout="@layout/fragment_main" />
-
-    <fragment
-        android:id="@+id/fragment_home"
-        android:name="keijumt.navigationsample.home.HomeFragment"
-        android:label="homeFragment"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/fragment_search"
-        android:name="keijumt.navigationsample.search.searchFragment"
-        android:label="searchFragment"
-        tools:layout="@layout/fragment_search" />
-
-    <fragment
-        android:id="@+id/fragment_notification"
-        android:name="keijumt.navigationsample.notification.notificationFragment"
-        android:label="notificationFragment"
-        tools:layout="@layout/fragment_notification" />
 </navigation>

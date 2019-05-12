@@ -18,7 +18,7 @@ class LauncherFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_launcher, container, false)
 
         thread {
-            Thread.sleep(3000)
+            Thread.sleep(1000)
             requireActivity().runOnUiThread {
                 findNavController().navigate(R.id.action_fragment_launcher_to_fragment_main)
             }

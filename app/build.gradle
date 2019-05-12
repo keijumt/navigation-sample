@@ -35,6 +35,8 @@ dependencies {
     implementation project(':launcher')
     implementation project(':main')
     implementation project(':home')
+    implementation project(':search')
+    implementation project(':notification')
 
     // Navigation
     implementation "androidx.navigation:navigation-fragment:2.1.0-alpha03"

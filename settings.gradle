@@ -1,2 +1,2 @@
-include ':app', ':common'
+include ':app', ':common', ':launcher'
 rootProject.name='navigation-sample'

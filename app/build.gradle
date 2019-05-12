@@ -32,6 +32,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
     implementation project(':common')
+    implementation project(':launcher')
 
     // Navigation
     implementation "androidx.navigation:navigation-fragment:2.1.0-alpha03"

@@ -26,4 +26,10 @@
         android:name="keijumt.navigationsample.home.HomeFragment"
         android:label="homeFragment"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="keijumt.navigationsample.search.searchFragment"
+        android:label="searchFragment"
+        tools:layout="@layout/fragment_search" />
 </navigation>

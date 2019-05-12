@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import kotlin.concurrent.thread
 
 class LauncherFragment : Fragment() {
 
@@ -15,7 +17,12 @@ class LauncherFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_launcher, container, false)
 
-
+        thread {
+            Thread.sleep(3000)
+            requireActivity().runOnUiThread {
+                findNavController().navigate(R.id.action_fragment_launcher_to_fragment_main)
+            }
+        }
         return view
     }
 }

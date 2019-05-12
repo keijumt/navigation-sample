@@ -9,6 +9,16 @@
         android:id="@+id/fragment_launcher"
         android:name="keijumt.navigationsample.launcher.LauncherFragment"
         android:label="launcherFragment"
-        tools:layout="@layout/fragment_launcher" />
+        tools:layout="@layout/fragment_launcher">
+        <action
+            android:id="@+id/action_fragment_launcher_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="keijumt.navigationsample.main.MainFragment"
+        android:label="mainFragment"
+        tools:layout="@layout/fragment_main" />
 
 </navigation>

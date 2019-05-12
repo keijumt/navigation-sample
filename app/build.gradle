@@ -33,8 +33,11 @@ dependencies {
 
     implementation project(':common')
     implementation project(':launcher')
+    implementation project(':main')
 
     // Navigation
     implementation "androidx.navigation:navigation-fragment:2.1.0-alpha03"
     implementation "androidx.navigation:navigation-ui:2.1.0-alpha03"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.1.0-alpha03"
+    implementation "androidx.navigation:navigation-ui-ktx:2.1.0-alpha03"
 }

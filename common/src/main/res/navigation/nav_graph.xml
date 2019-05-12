@@ -32,4 +32,10 @@
         android:name="keijumt.navigationsample.search.searchFragment"
         android:label="searchFragment"
         tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/fragment_notification"
+        android:name="keijumt.navigationsample.notification.notificationFragment"
+        android:label="notificationFragment"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

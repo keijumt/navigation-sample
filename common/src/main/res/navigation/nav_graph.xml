@@ -21,4 +21,9 @@
         android:label="mainFragment"
         tools:layout="@layout/fragment_main" />
 
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="keijumt.navigationsample.home.HomeFragment"
+        android:label="homeFragment"
+        tools:layout="@layout/fragment_home" />
 </navigation>

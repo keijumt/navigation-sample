@@ -19,8 +19,13 @@
 
     <fragment
         android:id="@+id/notification"
-        android:name="keijumt.navigationsample.notification.NotificationFragment"
+        android:name="keijumt.navigationsample.noti.NotificationFragment"
         android:label="notificationFragment"
         tools:layout="@layout/fragment_notification" />
+
+    <dialog
+        android:id="@+id/alert_dialog"
+        android:name="keijumt.navigationsample.dialog.AlertDialogFragment"
+        android:label="AlertDialogFragment" />
 
 </navigation>

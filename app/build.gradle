@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs"
 
 android {
@@ -18,6 +19,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    dataBinding {
+        enabled = true
     }
 }
 
@@ -37,6 +41,7 @@ dependencies {
     implementation project(':home')
     implementation project(':search')
     implementation project(':notification')
+    implementation project(':dialog')
 
     // Navigation
     implementation "androidx.navigation:navigation-fragment:2.1.0-alpha03"
